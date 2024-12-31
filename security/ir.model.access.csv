@@ -1,0 +1,5 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_breakfast_items","Access Breakfast Items","model_breakfast_items","","1","1","1","1"
+"access_order_items","Access Order Items","model_order_items","","1","1","1","1"
+"access_resturant","Access Resturant","model_resturant","","1","1","1","1"
+"access_orders","Access Orders","model_orders","","1","1","1","1"

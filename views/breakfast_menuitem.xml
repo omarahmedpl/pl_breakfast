@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Actions -->
+    <record id="view_breakfast_items_action" model="ir.actions.act_window">
+        <field name="name">Breakfast Items</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">breakfast.items</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="action_orders" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">orders</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id="view_order_items_action" model="ir.actions.act_window">
+        <field name="name">Order Items</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">order.items</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_resturant_action" model="ir.actions.act_window">
+        <field name="name">Resturant</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">resturant</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="view_orders_action" model="ir.actions.act_window">
+        <field name="name">Orders</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">orders</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_breakfast_root" name="Breakfast" web_icon="pl_breakfast,static/src/description/1934272.png">
+        <menuitem id="menu_orders" name="Orders" action="view_orders_action"/>
+        <menuitem id="menu_breakfast_items" name="Items" action="view_breakfast_items_action"/>
+        <menuitem id="menu_resturant" name="Resturant" action="view_resturant_action"/>
+    </menuitem>
+
+
+</odoo>
